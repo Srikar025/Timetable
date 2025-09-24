@@ -1,0 +1,5 @@
+faculty_id,faculty_name,max_load_hours,expertise,available_days,available_periods
+F001,Dr. Sharma,12,Mathematics,Mon;Tue;Wed;Thu;Fri,1;2;3;4;5;6
+F002,Dr. Iyer,10,Education,Mon;Tue;Thu;Fri,1;2;3;4;5
+F003,Dr. Khan,12,Research Methods,Mon;Wed;Fri,1;2;3;4;5;6
+F004,Ms. Rao,8,English,Mon;Tue;Wed;Thu,1;2;3;4

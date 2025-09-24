@@ -1,0 +1,5 @@
+room_id,room_name,capacity,room_type,available_days,available_periods
+R101,Room 101,60,classroom,Mon;Tue;Wed;Thu;Fri,1;2;3;4;5;6
+R102,Room 102,40,classroom,Mon;Tue;Wed;Thu;Fri,1;2;3;4;5
+L201,Lab 201,30,lab,Mon;Wed;Fri,1;2;3;4;5
+L202,Lab 202,25,lab,Tue;Thu,1;2;3;4

@@ -1,0 +1,5 @@
+course_id,program,semester,section,course_name,credits,course_type,theory_hours,practical_hours,faculty_id
+FYUP-MATH-101,FYUP-Science,1,A,Calculus I,4,Major,3,1,F001
+BED-EDU-201,B.Ed.,2,A,Philosophy of Education,3,Core,3,0,F002
+MED-RES-501,M.Ed.,1,A,Research Methods,4,Core,3,1,F003
+ITEP-ENG-110,ITEP,1,A,English Communication,2,AEC,2,0,F004
