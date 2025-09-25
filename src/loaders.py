@@ -29,7 +29,7 @@ def _validate(df: pd.DataFrame, required_cols: list) -> pd.DataFrame:
 
 
 def load_courses_csv(df: Optional[pd.DataFrame]) -> Optional[pd.DataFrame]:
-	if df is None:
+	if df is None or df.empty:
 		return None
 	df = _validate(df, REQUIRED_COURSE_COLS)
 	df["credits"] = pd.to_numeric(df["credits"], errors="coerce").fillna(0).astype(int)
@@ -39,7 +39,7 @@ def load_courses_csv(df: Optional[pd.DataFrame]) -> Optional[pd.DataFrame]:
 
 
 def load_faculty_csv(df: Optional[pd.DataFrame]) -> Optional[pd.DataFrame]:
-	if df is None:
+	if df is None or df.empty:
 		return None
 	df = _validate(df, REQUIRED_FACULTY_COLS)
 	df["available_days"] = _coerce_list(df["available_days"])  # e.g., Mon;Tue;Wed
@@ -49,7 +49,7 @@ def load_faculty_csv(df: Optional[pd.DataFrame]) -> Optional[pd.DataFrame]:
 
 
 def load_rooms_csv(df: Optional[pd.DataFrame]) -> Optional[pd.DataFrame]:
-	if df is None:
+	if df is None or df.empty:
 		return None
 	df = _validate(df, REQUIRED_ROOMS_COLS)
 	df["available_days"] = _coerce_list(df["available_days"])  # e.g., Mon;Tue;Wed
@@ -59,7 +59,7 @@ def load_rooms_csv(df: Optional[pd.DataFrame]) -> Optional[pd.DataFrame]:
 
 
 def load_programs_csv(df: Optional[pd.DataFrame]) -> Optional[pd.DataFrame]:
-	if df is None:
+	if df is None or df.empty:
 		return None
 	df = _validate(df, REQUIRED_PROGRAMS_COLS)
 	df["student_count"] = pd.to_numeric(df["student_count"], errors="coerce").fillna(0).astype(int)
