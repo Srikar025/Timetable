@@ -13,7 +13,7 @@ from src.exporters import export_timetable_excel
 
 st.set_page_config(page_title="NEP Timetable Generator", layout="wide")
 
-st.title("NEP 2020 Timetable Generator v1.1")
+st.title("NEP 2020 Timetable Generator v1.2")
 st.caption("Generate conflict-free timetables for FYUP, B.Ed., M.Ed., ITEP")
 
 with st.sidebar:
